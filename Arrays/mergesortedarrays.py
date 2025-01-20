@@ -24,3 +24,5 @@ class Solution:
 solution = Solution()
 result = solution.mergeSortedArrays([1,3,4,53],[1, 5, 45])
 print(result)
+
+
