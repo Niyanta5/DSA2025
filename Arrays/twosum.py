@@ -9,9 +9,7 @@ class Solution:
                 result.append([adict[complement], i])
             adict[num] = i
         return result
-                
-
     
 solution = Solution()
-result = solution.twoSum([1,3,53,3,2,4],6)
-print(result)        
+finalresult = solution.twoSum([1,3,53,3,2,4],6)
+print(finalresult)        
