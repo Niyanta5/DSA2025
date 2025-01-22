@@ -1,6 +1,6 @@
 class Solution:
     def majorityElement(self, alist):
-        adict = dict()
+        adict = {}
         max_value = 0
         for item in alist:
             if item in adict:
