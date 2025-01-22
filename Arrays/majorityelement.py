@@ -1,6 +1,6 @@
 class Solution:
-    def majorityelement(self, alist):
-        adict = {}
+    def majorityElement(self, alist):
+        adict = dict()
         max_value = 0
         for item in alist:
             if item in adict:
@@ -21,5 +21,5 @@ class Solution:
     
     
 solution  = Solution()
-result = solution.majorityelement([2,3,4,3,3,3,3,1])
+result = solution.majorityElement([2,3,4,3,3,3,3,1])
 print(result)
