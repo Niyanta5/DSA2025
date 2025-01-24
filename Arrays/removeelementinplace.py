@@ -10,5 +10,5 @@ class Solution:
     
     
 solution= Solution()
-result = solution.removeElement([1,34,22,12,12,4, 4, 4,4,4], 4)
+result = solution.removeElement([1,34,2, 4, 4,4,4], 4)
 print(result)
