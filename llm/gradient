@@ -5,9 +5,7 @@ import matplotlib.pyplot as plt
 def f(x):
     return 3*x**2 - 4*x + 5
 xs = np.arange(-5, 5, 0.25) #create a set of scalar values we can fit in from -5 to 5(5 is exclusive)
-xs
 ys = f(xs)
-ys
 plt.plot(xs, ys)
 #learn the wiki of derivative and look the formula
 #if the slope is at +3, 
@@ -19,3 +17,18 @@ x = 3.0
 h = 0.00000001
 x = -3.0 
 (f(x+h)-f(x))/h
+
+
+# now lets take 3 inputs(a,b,c) and one output(d)
+a = 2.0
+b = -3.0
+c = 10.0
+d = a*b + c
+print(d)
+
+h = 0.0001
+#a,b,c are the points where where we'll be evaluating the derivative of d wrt a, b and c
+d1 = a*b+c
+a +=h
+d2 = a*b+c
+slope = (d2-d1)/h #d2-d1 is how much the function increased when we increased the function and it is then normalized by h
