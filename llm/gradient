@@ -1,0 +1,21 @@
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+
+def f(x):
+    return 3*x**2 - 4*x + 5
+xs = np.arange(-5, 5, 0.25) #create a set of scalar values we can fit in from -5 to 5(5 is exclusive)
+xs
+ys = f(xs)
+ys
+plt.plot(xs, ys)
+#learn the wiki of derivative and look the formula
+#if the slope is at +3, 
+h = 0.0000001
+x = 3.0 
+(f(x+h)-f(x))/h
+
+#if the slope is at -3
+h = 0.00000001
+x = -3.0 
+(f(x+h)-f(x))/h
